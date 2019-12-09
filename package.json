@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "new": "cp -R examples",
-    "try": "node $TARGET < $TARGET/input.txt"
+    "new": "cp -R examples/sort",
+    "test": "node $DIR < $DIR/input.txt"
   },
   "author": "",
   "license": "MIT",

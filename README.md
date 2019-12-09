@@ -18,7 +18,7 @@ $ npm install
 ## Usage example
 
 ```sh
-$ node examples/index.js < examples/input.txt
+$ node examples/sort/index.js < examples/sort/input.txt
 5
 2
 3 
@@ -33,18 +33,18 @@ $ node examples/index.js < examples/input.txt
 ### Create a new template
 
 ```sh
-$ npm run new abc-`date '+%Y%m%d%H%M%S'`
-> cp -R examples "abc-20191209180605"
+$ mkdir abc-123
+$ npm run new abc-123/A
+> cp -R examples/sort "abc-123/A"
 ```
 
 ### Run your code
 
 ```sh
-$ TARGET=abc-20191209180605 npm run try
+$ DIR=abc-123/A npm test
 ```
 
-This is the same as `node abc-20191209180605/index.js < abc-201912
-09180605/input.txt`.
+This is the same as `node abc-123/A/index.js < abc-123/A/input.txt`.
 
 ## Contributing
 
