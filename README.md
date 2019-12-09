@@ -1,7 +1,6 @@
 # AtCoder with JavaScript (Node.js)
 
-This repogitory is a JavaScript (Node.js) coding environment for for https://atcoder.jp/. <br>
-You can try your code here at first, and then submit your answer to AtCoder.
+This repogitory is a JavaScript (Node.js) coding environment for https://atcoder.jp/. You can try your code here at first, and then submit your answer to AtCoder.
 
 ## Getting Started
 
