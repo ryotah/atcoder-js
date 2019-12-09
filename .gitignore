@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# IDE
+.vscode/*
+!.vscode/settings.json.example
+
+# For my private test code
+/[0-9]*/
