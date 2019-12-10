@@ -2,18 +2,22 @@
 
 const main = input => {
   console.log(input, '\n---'); // for debug
-  const A = input.split('\n')[0].split(' ');
-  const B = input.split('\n')[1].split(' ');
+  const A = input
+    .split('\n')[0]
+    .split(' ')
+    .map(toNumber);
+  const B = input
+    .split('\n')[1]
+    .split(' ')
+    .map(toNumber);
   let count = 0;
-  B.forEach(v => {
-    if (binarySearch(A, v)) {
-      count += 1;
-    }
-  });
+  B.forEach(v => binaryIndexOf(A, v) !== -1 && count++);
   console.log(count);
 };
 
-const binarySearch = (arr, key) => {
+const toNumber = str => Number(str);
+
+const binaryIndexOf = (arr, key) => {
   let left = 0;
   let right = arr.length;
   while (left < right) {
@@ -27,7 +31,7 @@ const binarySearch = (arr, key) => {
       left = mid + 1;
     }
   }
-  return null;
+  return -1;
 };
 
 main(require('fs').readFileSync('/dev/stdin', 'utf8'));
