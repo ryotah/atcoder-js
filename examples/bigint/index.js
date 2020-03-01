@@ -2,14 +2,15 @@
 
 const main = input => {
   console.log(input, '\n---'); // for debug
-  input = input.split('\n');
-  input = input.map(v => bigInt(v));
-  const sum = input.reduce((acc, v) => {
-    acc = acc.add(v);
-    return acc;
-  }, bigInt(0));
-  console.log(sum.toJSNumber()); // for debug
+  const sum = input
+    .split('\n')
+    .map(v => bigInt(v))
+    .reduce((acc, v) => {
+      acc = acc.add(v);
+      return acc;
+    }, bigInt(0));
 
+  console.log(sum.toJSNumber()); // for debug
   console.log(sum.toString());
 };
 

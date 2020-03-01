@@ -15,13 +15,17 @@ This repogitory is a JavaScript (Node.js) coding environment for https://atcoder
 $ npm install
 ```
 
+### Optional
+
+If you are using Visual Studio Code, copy `.vscode/settings.json.example` and rename to `.vscode/settings.json` to enable [`eslint.autoFixOnSave`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+
 ## Usage example
 
 ```sh
 $ node examples/sort/index.js < examples/sort/input.txt
 5
 2
-3 
+3
 ---
 2
 3
@@ -41,7 +45,7 @@ $ npm run new abc-123/A
 ### Run your code
 
 ```sh
-$ DIR=abc-123/A npm test
+$ DIR=abc-123/A npm run exec
 ```
 
 This is the same as `node abc-123/A/index.js < abc-123/A/input.txt`.
@@ -53,3 +57,9 @@ Pull requests are welcome.
 ## License
 
 This project is an MIT-licensed open source project. See [LICENSE](./LICENSE) for more information.
+
+## Acknowledgments
+
+- https://book.mynavi.jp/support/pc/5295/
+- [AIZU ONLINE JUDGE: Programming Challenge](http://judge.u-aizu.ac.jp/onlinejudge/)
+- [A template to make good README.md](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)

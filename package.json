@@ -1,11 +1,16 @@
 {
-  "name": "atcoder",
+  "name": "atcoder-js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://github.com/ryotah/atcoder-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ryotah/atcoder-js.git"
+  },
   "scripts": {
-    "new": "cp -R examples/sort",
-    "test": "node $DIR < $DIR/input.txt"
+    "exec": "node $DIR < $DIR/input.txt",
+    "new": "cp -R template"
   },
   "author": "",
   "license": "MIT",
